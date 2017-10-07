@@ -1,0 +1,48 @@
+header .navbar-tabs{
+  justify-content: center; /*เป็นคำสั่ง css จากข้างบนมันจะไปดูคำสั่งที่header ไปที่navbar เพื่อให้มันอยู่ตรงกลาง*/
+} 
+
+.highlight{
+  margin-bottom: 0 !important; /*ทำให้รูปตรงไฮไลท์กับตั๊มเนลชิดกัน*/ /*บลูมามันสั่งมาว่า มาจินบอททอมมันต้อง1.5 แต่เราไม่ต้องการเลยใส่ศูนย์ */ /* อิมพอทเทน ให้น้ำหนักชี้เฉพาะเจาะจงว่าไฮไลท์ ของบลูมา*/
+}
+
+.highlight .highlight-item {
+  height: 416px;     /*ขนาดรูปภาพ*/
+  background: url(/assets/images/home/banner/highlight.jpg)  /*ที่อยู่ของรูปภาพนั้นๆ*/
+    no-repeat center/cover;
+  color: #ffffff;  /* ใส่สีตัวอักษรและทำใหอักษรมาอยู่ตรงกลางภาพ*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight .highlight-item h1{
+  font-size: 100px; /*กำหนดขนาดไซต์ตัวอักษร*/
+}
+
+.thumbnail{
+  border-top: 0.1rem solid #ffffff; /*ขอบระหว่างรูป*/
+}
+
+/*.thumbnail .thumbnail-item{
+  border-right: .1rem solid #ffffff;
+}
+
+.thumbnail .thumbnail-item:last-child{
+  border: none;
+}*/ /*เส้นขอบข้างขวา*/
+
+.thumbnail .thumbnail-item + .thumbnail-item{ 
+  border-left: .1rem solid #ffffff;
+}/*เส้นขอบซ้าย*/
+
+.thumbnail .thumbnail-item{ /*ใส่ข้อความไปในรูปสี่อัน*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;  /* ใส่สีตัวอักษรและทำใหอักษรมาอยู่ตรงกลางภาพ*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem; /*10rem=160px*/
+}
