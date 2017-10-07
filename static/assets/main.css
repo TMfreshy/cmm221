@@ -1,0 +1,3 @@
+header .navbar-tabs{
+  justify-content: center; /*เป็นคำสั่ง css จากข้างบนมันจะไปดูคำสั่งที่header ไปที่navbar เพื่อให้มันอยู่ตรงกลาง*/
+} 
